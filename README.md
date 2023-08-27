@@ -17,7 +17,7 @@ Creación, puesta en marcha y coordinación de hilos.
 ![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/8650d083-bbd3-47c4-b068-e8e6e95c9018)
 
 
-
+*Con un hilo, la ejecucion demoro 4 minutos con 8 segundos, el equipo donde se ejecuto el programa posee 4 nucleos y 8 procesadores logicos, durante todo el proceso los 4 nucleos de la cpu fueron utilizados y el uso total de la CPU oscilaba entre 80-100%, una velocidad entre 3,50 a 3,90 gigaheartz. Esto indica que el equipo realizo un trabajo intenso al ejecutar el programa ya que el sistema estaba funcionando a su maxima capacidad.*
 
 
 2. Modifique el programa para que, en lugar de resolver el problema con un solo hilo, lo haga con tres, donde cada uno de éstos hará la tarcera parte del problema original. Verifique nuevamente el funcionamiento, y nuevamente revise el uso de los núcleos del equipo.
