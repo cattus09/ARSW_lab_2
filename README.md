@@ -22,6 +22,28 @@ Creación, puesta en marcha y coordinación de hilos.
 
 2. Modifique el programa para que, en lugar de resolver el problema con un solo hilo, lo haga con tres, donde cada uno de éstos hará la tarcera parte del problema original. Verifique nuevamente el funcionamiento, y nuevamente revise el uso de los núcleos del equipo.
 
+```
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		PrimeFinderThread pft1=new PrimeFinderThread(0, 10000000);
+		PrimeFinderThread pft2=new PrimeFinderThread(10000001, 20000000);
+		PrimeFinderThread pft3=new PrimeFinderThread(20000001, 30000000);
+		
+		pft1.start();
+		pft2.start();
+		pft3.start();
+
+		
+		
+	}
+	
+}
+
+```
+
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 
 
