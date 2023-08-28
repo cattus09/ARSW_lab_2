@@ -44,6 +44,15 @@ public class Main {
 
 ```
 
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/8b2af770-c275-445b-aaa5-2f6a7247bcc7)
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/f0bbc4af-d8dc-4457-b41f-8c892ddd92f6)
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/87c58066-4299-4c43-8615-7dc0c492b156)
+
+
+
+
+
+
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 
 
