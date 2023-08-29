@@ -11,9 +11,9 @@ import javax.swing.JButton;
  * 
  */
 public class Carril {
-	private Color on = Color.CYAN;
+	//private Color on = Color.CYAN;
 	private Color off = Color.LIGHT_GRAY;
-	private Color stop = Color.red;
+	//private Color stop = Color.red;
 	private Color start = Color.GREEN;
 	/**
 	 * Pasos del carril
