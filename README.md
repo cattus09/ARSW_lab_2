@@ -49,7 +49,7 @@ public class Main {
 ![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/87c58066-4299-4c43-8615-7dc0c492b156)
 
 
-
+*A pesar de que se demoró casi el mismo tiempo de ejecucion, 4 minutos con 20 segundos, El uso de la CPU rondaba entre el 20 y el 50% durante la mayor parte de la ejecucion, debido a que el código corría de manera concurrente Posemos ver que cada núcleo trabaja casi a la misma intensidad pero de manera bastante reducida comparando cuando lo ejecutamos con un solo hilo*
 
 
 
