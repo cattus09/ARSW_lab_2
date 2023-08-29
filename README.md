@@ -233,6 +233,19 @@ Taller.
     deberían dormirse, y cuando se haga clic en ‘Continue’ los mismos
     deberían despertarse y continuar con la carrera. Diseñe una solución que permita hacer esto utilizando los mecanismos de sincronización con las primitivas de los Locks provistos por el lenguaje (wait y notifyAll).
 
+	R/. se crean las funciones stopPlay() y Continue() estas se implementan en un ciclo for para que todos los galgos paren o continúen según se requiera
+
+	![](./img/fotos/ARSW_LAB2_FOTO11.png)
+
+	Las funciones stopPlay() y Continue():
+
+	![](./img/fotos/ARSW_LAB2_FOTO12.png)
+
+	El funcionamiento de estas se realiza gracias a una variable booleana llamada stoping la cual se valida en la función corra del código y de ser verdadera detiene el hilo:
+
+	![](./img/fotos/ARSW_LAB2_FOTO13.png)
+
+
 
 ## Criterios de evaluación
 

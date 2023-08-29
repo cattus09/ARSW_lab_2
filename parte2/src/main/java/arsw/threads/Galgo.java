@@ -48,7 +48,7 @@ public class Galgo extends Thread {
 	public void Continue(){
 		synchronized(this){
 			stoping = false;
-			this.notifyAll();
+			notifyAll();
 		}
 	}
 
