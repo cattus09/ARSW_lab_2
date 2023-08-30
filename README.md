@@ -224,6 +224,10 @@ Taller.
     dichas inconsistencias). A partir de esto, identifique las regiones
     críticas () del programa.
 
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/373f73f5-a9d1-4b20-85e5-360213bb25aa)
+
+
+
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
     resultados.
