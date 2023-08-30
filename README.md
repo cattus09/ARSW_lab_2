@@ -237,14 +237,19 @@ Taller.
 
 ![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/3ec0d3fc-08d1-4335-93ec-448fbcd2f503)
 
+*Podemos ver que el programa funciona pero tiene varias inconsistencias como puestos que se repite o que la salida no muestra el orden correcto y la cantidad de galgos no es la correcta debido a esto*
 
-![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/373f73f5-a9d1-4b20-85e5-360213bb25aa)
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/0035719c-82fc-42ed-aebd-406f7bf4fdcf)
 
 
+
+*Como region critica tenemos En el método corra de la clase Galgo, accede a regl para actualizar la última posición alcanzada y verificar si el galgo es el ganador.*
 
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
     resultados.
+
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/373f73f5-a9d1-4b20-85e5-360213bb25aa)
 
 4.  Implemente las funcionalidades de pausa y continuar. Con estas,
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
