@@ -128,6 +128,9 @@ public class PrimeFinderThread extends Thread{
 
 ```
 
+*Con la clase primeFinderThread lo que hicimos fue modificarlo para controlar el estado de ejecucion*
+
+
 ```
 package edu.eci.arsw.primefinder;
 
