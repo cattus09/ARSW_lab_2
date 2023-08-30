@@ -22,11 +22,13 @@ public class Galgo extends Thread {
 	public void corra() throws InterruptedException {
 		while (paso < carril.size()) {			
 			Thread.sleep(100);
-			carril.setPasoOn(paso++);
-			carril.displayPasos(paso);
-			synchronized(this){
-				while(stoping){
-					this.wait();
+			synchronized(regl){
+				carril.setPasoOn(paso++);
+				carril.displayPasos(paso);
+				synchronized(this){
+					while(stoping){
+						this.wait();
+					}
 				}
 			}
 			
