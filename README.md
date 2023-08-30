@@ -249,7 +249,6 @@ Taller.
     regiones críticas sólo acceda un hilo a la vez. Verifique los
     resultados.
 
-![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/373f73f5-a9d1-4b20-85e5-360213bb25aa)
 
 4.  Implemente las funcionalidades de pausa y continuar. Con estas,
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
