@@ -24,9 +24,10 @@ public class Main {
 		for(PrimeFinderThread thread:threads){
 			thread.start();
 		}
-
+		//Controlamos la pausa y la reanudacion de los hilos
 		try (Scanner scanner = new Scanner(System.in)) {
 			while(Objects.equals(input, "")){
+				//Calculamos el tiempo transcurrido, esperamos a que hallan pasado 5 segundos
 				do {elapsedTime = System.currentTimeMillis() - startTime;} while (elapsedTime < 5000); 
 				for(PrimeFinderThread thread:threads){
 					System.out.println(thread.information());
@@ -34,11 +35,14 @@ public class Main {
 				for(PrimeFinderThread thread:threads){
 					thread.pause();
 				}
+				// Se espera que el ususario oprima enter para reanudar los hilos
 				System.out.println("Oprima enter");
 				input = scanner.nextLine();
+				// Reanudamos todos los hilos
 				for(PrimeFinderThread thread:threads){
 					thread.again();
 				}
+				//Actualizamos el valor de startTime
 				startTime = System.currentTimeMillis();
 			}
 		}
