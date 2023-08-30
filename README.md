@@ -68,6 +68,7 @@ import java.util.List;
 
 public class PrimeFinderThread extends Thread{
 	int a,b;
+	// variable running, indica si el o los hilos estan en ejecucion
 	boolean running = true;
 
 	private List<Integer> primes=new LinkedList<Integer>();
@@ -77,7 +78,8 @@ public class PrimeFinderThread extends Thread{
 		this.a = a;
 		this.b = b;
 	}
-	
+	// metodo que indica si el hilo esta en ejecucion, es syncronized para evitar conflictos,
+	//si la variable es false se pone en espera
 	public synchronized void isRunning(){
 		while (!running){
 			try {
@@ -118,7 +120,7 @@ public class PrimeFinderThread extends Thread{
 	public String information(){
 		return getName() + " " + primes.size();
 	}
-
+	// metodo que convierte running en true y despierta a todos los hilos.
 	public synchronized void again(){
 		running = true;
 		notifyAll();
@@ -158,9 +160,10 @@ public class Main {
 		for(PrimeFinderThread thread:threads){
 			thread.start();
 		}
-
+		//Controlamos la pausa y la reanudacion de los hilos
 		try (Scanner scanner = new Scanner(System.in)) {
 			while(Objects.equals(input, "")){
+				//Calculamos el tiempo transcurrido, esperamos a que hallan pasado 5 segundos
 				do {elapsedTime = System.currentTimeMillis() - startTime;} while (elapsedTime < 5000); 
 				for(PrimeFinderThread thread:threads){
 					System.out.println(thread.information());
@@ -168,11 +171,14 @@ public class Main {
 				for(PrimeFinderThread thread:threads){
 					thread.pause();
 				}
+				// Se espera que el ususario oprima enter para reanudar los hilos
 				System.out.println("Oprima enter");
 				input = scanner.nextLine();
+				// Reanudamos todos los hilos
 				for(PrimeFinderThread thread:threads){
 					thread.again();
 				}
+				//Actualizamos el valor de startTime
 				startTime = System.currentTimeMillis();
 			}
 		}
@@ -181,7 +187,10 @@ public class Main {
 
 	
 }
+
 ```
+
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/2f5db7fe-70eb-44d9-83f9-bf5f2ec21638)
 
 
 
