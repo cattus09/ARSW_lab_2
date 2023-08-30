@@ -130,9 +130,6 @@ public class PrimeFinderThread extends Thread{
 
 ```
 
-*Con la clase primeFinderThread lo que hicimos fue modificarlo para controlar el estado de ejecucion*
-
-
 ```
 package edu.eci.arsw.primefinder;
 
@@ -224,11 +221,6 @@ Taller.
 
 ![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/ae9355e1-5c31-41bc-98ad-202f1d6b43f7)
 
-![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/0d37a2d5-99ce-4bb5-9059-4727b4c0aa92)
-
-![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/7413d91a-a07b-4288-9a97-056e8f25f396)
-
-![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/3ec0d3fc-08d1-4335-93ec-448fbcd2f503)
 
 
 
@@ -238,6 +230,13 @@ Taller.
     podrían salir resultados válidos, pero en otros se pueden presentar
     dichas inconsistencias). A partir de esto, identifique las regiones
     críticas () del programa.
+
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/0d37a2d5-99ce-4bb5-9059-4727b4c0aa92)
+
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/7413d91a-a07b-4288-9a97-056e8f25f396)
+
+![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/3ec0d3fc-08d1-4335-93ec-448fbcd2f503)
+
 
 ![image](https://github.com/cattus09/ARSW_lab_2/assets/98556822/373f73f5-a9d1-4b20-85e5-360213bb25aa)
 
